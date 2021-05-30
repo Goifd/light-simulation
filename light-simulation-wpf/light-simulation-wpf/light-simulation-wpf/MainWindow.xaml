@@ -1,0 +1,40 @@
+﻿<Window x:Class="light_simulation_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1500" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="276*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="cnv_display" HorizontalAlignment="Left" Height="721" Margin="359,24,0,0" VerticalAlignment="Top" Width="1095" MouseDown="cnv_display_MouseDown" MouseUp="cnv_display_MouseUp" Background="#FF275874" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnCreate" Content="Create
+                " HorizontalAlignment="Left" Margin="194,69,0,0" VerticalAlignment="Top" Width="75" Height=" 25" FontSize="16" FontFamily="Tempus Sans ITC" Click="btnCreate_Click"  />
+        <ComboBox x:Name="cmbSelectItem" HorizontalAlignment="Left" Margin="27,69,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.042,0.455" >
+            <ComboBoxItem>Mirror</ComboBoxItem>
+            <ComboBoxItem>Light beme</ComboBoxItem>
+            <ComboBoxItem>Curved Mirror</ComboBoxItem>
+            <ComboBoxItem>Lense</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="txtSP_1" HorizontalAlignment="Left" Height="23" Margin="27,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.075,-1.696" Text="100,300" />
+        <TextBox x:Name="txtEP_1" HorizontalAlignment="Left" Height="23" Margin="179,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="100,500"/>
+        <TextBox x:Name="txtEP_2" HorizontalAlignment="Left" Height="23" Margin="179,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="200,500"/>
+        <TextBox x:Name="txtSP_2" HorizontalAlignment="Left" Height="23" Margin="27,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.642,0.609" Text="200,300"/>
+        <TextBox x:Name="txtR_1" HorizontalAlignment="Left" Height="23" Margin="27,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,1.435" Text="400"/>
+        <TextBox x:Name="txtR_2" HorizontalAlignment="Left" Height="23" Margin="179,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="800"/>
+        <Button x:Name="btn_byValue" Content="By Value" HorizontalAlignment="Left" Margin="27,281,0,0" VerticalAlignment="Top" Width="78" Height="26" Click="btn_byValue_Click"/>
+        <Label Content="SP2" HorizontalAlignment="Left" Margin="27,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.115" Width="120" Height="27"/>
+        <Label Content="EP2" HorizontalAlignment="Left" Margin="179,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.115" Width="120" Height="27"/>
+        <Label Content="EP1/V" HorizontalAlignment="Left" Margin="179,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.115" Width="120" Height="27"/>
+        <Label Content="SP1" HorizontalAlignment="Left" Margin="27,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.115" Width="120" Height="27"/>
+        <Label Content="R1" HorizontalAlignment="Left" Margin="27,211,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.115" Width="120" Height="27"/>
+        <Label Content="R2" HorizontalAlignment="Left" Margin="179,213,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.115" Width="120" Height="27"/>
+        <ComboBox x:Name="cmbSelectLense" HorizontalAlignment="Left" Margin="179,281,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBoxItem>Homoru</ComboBoxItem>
+        <ComboBoxItem>Domboru</ComboBoxItem>
+        </ComboBox>
+     </Grid>
+ </Window>
